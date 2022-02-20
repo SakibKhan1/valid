@@ -11,16 +11,16 @@ using namespace std;
 int main()
 {
     int n;
-    //n is user input from 0 to 100
+    //n is user input from 1 to 99
     cout << "Input a number: ";
     cin >> n;
-    while ((n<0)||(n>100))
+    while ((n<1)||(n>99))
     {
         cout << "Please re-enter a valid entry:";
         cin >> n;
     }
     //makes user input again if outside of bounds
-    if ((n>0)&&(n<100));
+    if ((n>1)&&(n<99));
     {
         n = n*n;
         cout <<n;
