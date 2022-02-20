@@ -10,18 +10,22 @@ using namespace std;
 
 int main()
 {
-    int i;
-    //input will be integer "i"
+    int n;
+    //n is user input from 0 to 100
     cout << "Input a number: ";
-    cin >> i;
-    if(0 < i && i < 100){
-    //sets condition to be 1-99
-        cout << i * i << endl;
+    cin >> n;
+    while ((n<0)||(n>100))
+    {
+        cout << "Please re-enter a valid entry:";
+        cin >> n;
     }
-    else{
-        cout << "Invalid";
+    //makes user input again if outside of bounds
+    if ((n>0)&&(n<100));
+    {
+        n = n*n;
+        cout <<n;
     }
-
     return 0;
 
 }
+
